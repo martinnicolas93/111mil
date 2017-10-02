@@ -1,0 +1,10 @@
+INICIO
+	TEXTO otro
+	
+	otro = "n"
+	
+	HACER
+		IMPRIMIR "Repetir?"
+		TOMAR otro
+	MIENTRAS QUE(otro == "s")
+FIN

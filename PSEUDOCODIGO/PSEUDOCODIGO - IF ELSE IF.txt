@@ -1,0 +1,17 @@
+INICIO
+	TEXTO color
+	color = "ROJO"
+	
+	SI(color == "AZUL")
+	ENTONCES
+		IMPRIMIR "El color es azul"
+	SINO SI(color == "VERDE")
+	ENTONCES 
+		IMPRIMIR "El color es verde"
+	SINO SI(color == "ROJO")
+	ENTONCES
+		IMPRIMIR "El color es rojo"
+	SINO
+		IMPRIMIR "No conozco ese color"
+	FIN SI
+FIN

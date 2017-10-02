@@ -1,0 +1,8 @@
+INICIO
+	TEXTO otro
+	
+	MIENTRAS QUE(otro == "s")
+		IMPRIMIR "Repetir?"
+		TOMAR otro
+	FIN MIENTRAS
+FIN

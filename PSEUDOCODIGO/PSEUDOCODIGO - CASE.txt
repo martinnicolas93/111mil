@@ -1,0 +1,23 @@
+INICIO
+	TEXTO color
+	
+	color = "ROJO"
+	
+	SEGUN(color)
+		CASO("AZUL"):
+			IMPRIMIR "El color es azul"
+			SALIR
+			
+		CASO("VERDE"):
+			IMPRIMIR "El color es verde"
+			SALIR
+			
+		CASO ("ROJO"):
+			IMPRIMIR "El color es rojo"
+			SALIR
+			
+		DEFECTO:
+			IMPRIMIR "No conozco ese color"
+			SALIR
+	FIN SEGUN
+FIN

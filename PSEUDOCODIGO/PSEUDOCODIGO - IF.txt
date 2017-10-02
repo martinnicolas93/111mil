@@ -1,0 +1,30 @@
+INICIO
+	ENTERO numero1
+	ENTERO numero2
+	ENTERO numeroMayor
+	
+	numero1 = 0
+	numero2 = 0
+	numeroMayor = 0
+	
+	IMPRIMIR "Ingrese un número: " 
+	TOMAR numeroMayor
+	
+	IMPRIMIR "Ingrese otro número: "
+	TOMAR numero1
+	
+	SI(numero1 > numeroMayor)
+	ENTONCES 
+		numeroMayor = numero1
+	FIN SI
+	
+	IMPRIMIR "Ingrese el último número: "
+	TOMAR numero2
+	
+	SI(numero2 > numeroMayor)
+	ENTONCES
+		numeroMayor = numero2
+	FIN SI
+	
+	IMPRIMIR "El número mayor es: " + numeroMayor
+FIN

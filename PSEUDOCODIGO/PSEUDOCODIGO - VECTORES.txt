@@ -1,0 +1,13 @@
+INICIO
+	ENTERO numeros[10]
+	ENTERO i
+	
+	PARA(i = 0, i <= 9, i++)
+		IMPRIMIR "Ingrese un numero: "
+		TOMAR numeros[i]
+	FIN PARA
+	
+	PARA(i = 0, i <= 9, i++)
+		IMPRIMIR numeros[i]
+	FIN PARA
+FIN
