@@ -1,5 +1,7 @@
 INICIO
 	TEXTO otro
+
+	otro = "s"
 	
 	MIENTRAS QUE(otro == "s")
 		IMPRIMIR "Repetir?"
