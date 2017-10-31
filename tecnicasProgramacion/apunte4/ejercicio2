@@ -18,6 +18,7 @@ elif ((dayNumber == 4))
 then
 	echo "Miércoles"
 elif ((dayNumber == 5))
+then
 	echo "Jueves"
 elif ((dayNumber == 6))
 then
