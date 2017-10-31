@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Desarrollar un programa que le solicite al usuario que ingrese un número entero.
+# Determinar si el número ingresado es 10.
+
+read -p "Numero: " number
+
+if ((number != 10))
+then
+	echo "no es 10"
+fi
+
+exit 0
