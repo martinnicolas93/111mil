@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Escriba un algoritmo para mostrar por pantalla el nombre del día de acuerdo 
+# a un número (del 1 al 7) que se pase como entrada. 
+
+read -p "Número de día: " dayNumber
+
+case $dayNumber in
+	1)
+		echo "Domingo"
+		;;
+	2)
+		echo "Lunes"
+		;;
+	3)
+		echo "Martes"
+		;;
+	4)
+		echo "Miércoles"
+		;;
+	5)
+		echo "Jueves"
+		;;
+	6)
+		echo "Viernes"
+		;;
+	7)
+		echo "Sábado"
+		;;
+	*)
+		echo "ERROR"
+		exit 1
+esac
+
+exit 0
