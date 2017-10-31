@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Desarrollar un software que le solicite al usuario que ingrese el nombre de 
+# su barrio, la dirección postal de la comisaría más cercana, y las entrecalles. 
+# Luego mostrar un mensaje por pantalla similar a “La comisaría de Banfield se 
+# encuentra en la calle Maipú 133 entre Alsina y Belgrano”. 
+
+read -p "Barrio: " city
+read -p "Direccion de la comisaría: " address
+read -p "Entrecalle1: " street1
+read -p "Entrecalle2: " street2
+
+echo "La comisaría de $city se encuentra en $address entre $street1 y $street2"
+
+exit 0

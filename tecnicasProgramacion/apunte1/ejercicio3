@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Desarrollar un software que le solicite al usuario el ingreso de 5 números,
+# y mostrarlos en el orden inverso al ingresado.
+
+read -p "Numero: " number1
+read -p "Numero: " number2
+read -p "Numero: " number3
+read -p "Numero: " number4
+read -p "Numero: " number5
+
+echo $number5
+echo $number4
+echo $number3
+echo $number2
+echo $number1
+
+exit 0
