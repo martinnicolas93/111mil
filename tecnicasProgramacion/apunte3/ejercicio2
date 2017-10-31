@@ -9,7 +9,7 @@
 read -p "Usuario: " userName
 read -p "Contraseña: " password
 
-if [[ $userName == "Juan" && $password == "1234" ]]	\
+if [[ $userName == "Juan" && $password == "1234" ]] \
 	|| [[ $userName == "Pedro" && $password == "5678" ]]
 then
 	echo "Hola $userName"
