@@ -12,7 +12,7 @@ if [[ $character == "0" || $character == "1" || $character == "2" || \
 then
 	echo "Es dígito"
 elif [[ $character == "a" || $character == "e" || $character == "i" || \
-	$character == "o" || character == "u" ]]
+	$character == "o" || $character == "u" ]]
 then
 	echo "Es vocal"
 else
