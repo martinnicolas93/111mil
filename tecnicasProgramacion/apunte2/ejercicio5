@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Desarrollar un programa que determine si un usuario es de género masculino 
+# y es mayor de edad.
+
+read -p "Género (m/f): " gender
+read -p "Edad: " age
+
+if [ $gender == "m" ] && ((age >= 18))
+then
+	echo "Masculino, mayor de edad"
+fi
+
+exit 0
