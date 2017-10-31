@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Dados tres números enteros distintos escriba un algoritmo para escribirlos
-# ordenadamente de menor a mayor.
+# ordenadamente de menor a mayor. 
 
 read -p "Número: " number1
 max=number1
