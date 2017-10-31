@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Desarrollar un programa que le solicite al usuario que ingrese un número entero. 
+# Determinar si el número ingresado es múltiplo de 2 o no (utilizar el operador de 
+# módulo). 
+
+read -p "Número: " number
+
+if ((number % 2 == 0))
+then
+	echo "Es múltiplo de 2"
+else
+	echo "No es múltiplo de 2"
+fi
+
+exit 0
