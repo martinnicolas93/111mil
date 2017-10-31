@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Desarrollar un software que reciba como entrada una letra que corresponda a 
+# un número romano y encontrar su valor en números decimales, en caso contrario 
+# mostrar un mensaje de error que diga que no es un número romano válido.
+
+read -p "Caracter: " character
+
+case $character in
+	I)
+		echo "1"
+		;;
+	V)
+		echo "5"
+		;;
+	X)
+		echo "10"
+		;;
+	L)
+		echo "50"
+		;;
+	C)
+		echo "100"
+		;;
+	D)
+		echo "500"
+		;;
+	M)
+		echo "1000"
+		;;
+	*)
+		echo "ERROR"
+		exit 1
+esac
+
+exit 0
