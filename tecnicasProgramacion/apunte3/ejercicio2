@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Desarrollar un programa que le solicite al operador que ingrese su nombre 
+# y contraseña. Las personas autorizadas a utilizarlo son Juan (identificado 
+# con la contraseña 1234) y Pedro (identificado con la contraseña 5678). Si el 
+# operador es un usuario autorizado, saludarlo por su nombre, sino, salir del 
+# programa mostrando un mensaje de error.
+
+read -p "Usuario: " userName
+read -p "Contraseña: " password
+
+if [[ $userName == "Juan" && $password == "1234" ]]	\
+	|| [[ $userName == "Pedro" && $password == "5678" ]]
+then
+	echo "Hola $userName"
+else
+	echo "ERROR"
+	exit 1
+fi
+
+exit 0
