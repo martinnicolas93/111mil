@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Desarrollar un software que reciba como entrada un carácter cualquiera. 
+# Determinar si es una vocal, una consonante o un número.
+
+read -p "Caracter: " character
+
+if [[ $character == "0" || $character == "1" || $character == "2" || \
+	$character == "3" || $character == "4" || $character == "5" || \
+	$character == "6" || $character == "7" || $character == "8" || \
+	$character == "9" ]]
+then
+	echo "Es dígito"
+elif [[ $character == "a" || $character == "e" || $character == "i" || \
+	$character == "o" || character == "u" ]]
+then
+	echo "Es vocal"
+else
+	echo "Es consonante"
+fi
+
+exit 0
