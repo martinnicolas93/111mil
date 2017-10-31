@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Desarrollar un programa que le solicite al usuario que ingrese su género. 
+# Las respuestas posibles son: “Masculino” y “Femenino”. Determinar si el 
+# usuario es “Femenino”.
+
+read -p "Ingrese su genero (Masculino / Femenino): " gender
+
+if [ $gender == "Femenino" ]
+then
+	echo "Su género es femenino"
+fi
+
+exit 0
