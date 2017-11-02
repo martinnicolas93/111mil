@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Desarrollar un algoritmo que lea números enteros positivos de forma indefinida hasta que se ingrese un cero. 
+# Mostrar cual es el mayor.
+
+greatest=0
+
+while :
+do
+	while :
+	do
+		read -p "Número positivo: " number
+		
+		((number < 0)) || break
+	done
+
+	if ((number > greatest))
+	then
+		greatest=$number
+	fi
+
+	((number != 0)) || break
+done
+
+echo "Mayor: $greatest"
+
+exit 0

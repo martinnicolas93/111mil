@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Escribir un programa que pida por teclado la base y la altura de un rectángulo. Verificar que tanto
+# la base como la altura sean mayores que cero, y en caso contrario, repetir el ingreso de datos hasta 
+# que el valor sea correcto. Mostrar el área del rectángulo (base * altura).
+
+while :
+do
+	read -p "Base: " base
+
+	((base <= 0)) || break
+done
+
+while :
+do
+	read -p "Altura: " height
+
+	((height <= 0)) || break
+done
+
+echo "Area: $((base * height))"
+
+exit 0

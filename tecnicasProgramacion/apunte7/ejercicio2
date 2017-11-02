@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Desarrollar un algoritmo que solicite al usuario dos números y muestre el resultado de la 
+# suma de esos números por pantalla. Repetir esta operación mientras que el usuario así lo disponga.
+
+while :
+do
+	read -p "Numero: " number1
+	read -p "Numero: " number2
+
+	echo "La suma es $((number1 + number2))"
+
+	read -p "Otra suma? (s/n): " another
+
+	[ $another == "s" ] || break
+done
+
+exit 0

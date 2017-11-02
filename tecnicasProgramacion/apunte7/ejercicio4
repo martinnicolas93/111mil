@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Desarrollar un algoritmo que lea números de forma indefinida hasta que se ingrese un cero.
+# Mostrar la suma de todos los números ingresados.
+
+total=0
+
+while :
+do
+	read -p "Numero: " number
+
+	total=$((total + number))
+
+	((number != 0)) || break
+done
+
+echo "Total: $total"
+
+exit 0
