@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Desarrollar un algoritmo utilizando un ciclo for que genere la siguiente imagen:
+
+# X
+# XX
+# XXX
+# XXXX
+# XXXXX
+
+clear
+echo 
+
+for ((i = 0; i < 5; i++)) {
+	equis=$equis"X"
+	echo $equis
+}
+
+echo
+
+exit 0

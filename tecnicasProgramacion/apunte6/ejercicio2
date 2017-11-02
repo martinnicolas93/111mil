@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Desarrollar un algoritmo que genere la siguiente imagen:
+
+# X
+# XX
+# XXX
+# XXXX
+# XXXXX
+# XXXX
+# XXX
+# XX
+# X
+
+readonly size=5
+
+clear
+echo
+
+for ((i = 0; i < size; i++)) {
+	equis=$equis"X"
+	echo $equis
+}
+
+for ((i = size - 1; i > 0; i--)) {
+	equis=""
+
+	for ((k = 0; k < i; k++)) {
+		equis=$equis"X"
+	}
+
+	echo $equis
+}
+
+echo 
+
+exit 0
