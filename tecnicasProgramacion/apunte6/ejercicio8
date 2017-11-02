@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Desarrollar un algoritmo que genere rectángulos similares a la siguiente imagen:
+
+# XXXXXXXXXX
+# XXXXXXXXXX
+# XXXXXXXXXX
+# XXXXXXXXXX
+
+# Donde el usuario deba ingresar la base y la altura. Verificar que dichos datos sean mayores a cero.
+
+read -p "Base: " base
+read -p "Altura: " height
+
+if ((base < 1 || height < 1)) 
+then
+	echo "ERROR"
+	exit 1
+fi
+
+for ((i = 0; i < base; i++)) {
+	line=$line"X"
+}
+
+clear
+echo
+
+for ((i = 0; i < height; i++)) {
+	echo $line
+}
+
+echo
+
+exit 0

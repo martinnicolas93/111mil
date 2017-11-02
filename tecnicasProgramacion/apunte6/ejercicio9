@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# En la consola, cada carácter es exactamente el doble de alto que de ancho.  
+# Desarrollar un programa que genere cuadrados donde el usuario deba ingresar la base. Ejemplo:
+
+# XXXXXXXXXXX
+# XXXXXXXXXXX
+# XXXXXXXXXXX
+# XXXXXXXXXXX
+# XXXXXXXXXXX
+
+# Verificar que el dato ingresado sea mayor a cero y múltiplo de 2.
+
+read -p "Base (número par): " base
+
+if ((base < 1 || base % 2 == 1))
+then
+	echo "ERROR"
+	exit 1
+fi
+
+for ((i = 0; i < base; i++)) {
+	line=$line"X"
+}
+
+clear
+echo
+
+for ((i = 0; i < base / 2; i++)) {
+	echo $line
+}
+
+echo
+
+exit 0
